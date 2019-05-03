@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p style="position: absolute; left: 200px ; top: 200px;">Do You Love Me</p>
+<input type="button" value="Yes" onclick="yy()" style="position: absolute;left: 210px;top: 250px">
+<input id="tt" type="button" value="No" onmouseover="hihi()" style="position: absolute; left: 270px;top: 250px">
+<script>
+    function yy() {
+        alert("<3")
+        
+    }
+    function hihi() {
+        let x = Math.round(Math.random() * window.innerWidth)
+        let y = Math.round(Math.random() * window.innerHeight)
+        document.getElementById("tt").style.top = y + 5 + 'px'
+        document.getElementById("tt").style.top = x + 5 + 'px'
+    }
+</script>
+
+</body>
+</html>
